@@ -1,28 +1,28 @@
 # DD_fromSCRT_Tmpl
 From scratch templates
 
-JS and CSS templates for building websites from scratch like DD style ;) <br>
-Based on construction of common websites. Desktop first.
-
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)
 
-**JS Features:**
+JS and CSS templates for building websites from scratch like DD style ;) <br>
+Based on construction of common websites. Desktop first. ++ Joomla compatible
+
+**JS Features**
 - Cross Borwser functions
 - Responsive JS
 - Smartresize (A debouncing function from John Hann http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/)
 - DD_SetCookie function
 - Template functions
 
-**CSS Features:**
+**CSS Features**
 - Normalization
 - Responsive
 - Template css
 
-**CSS fonts :**
+**CSS fonts**
 - OpenSans as Regular, Italic, Bold and Blod Italic (Definition adapted from qrohlf.com/posts/better-opensans)
 fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 
-**Template Dimensions:**
+**Template Dimensions**
 
     body
      max-width: 1600px
@@ -34,6 +34,8 @@ fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
     .container
      width: 1600px
 
+**Joomla Compatible**
+Just place the folder to the template directory and connect your template.
 
 | Browser Support| Device Support |
 | -------------- |:---------------|
@@ -42,7 +44,6 @@ fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 | Firefox 3.5+   |
 | Opera   10.1+  |
 | IE      9+     |
-
 
 # DD_ Namespace
 DD_ stands for  **D**idl**d**u e.K. | HR IT-Solutions (Brand recognition)                   <br>
