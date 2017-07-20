@@ -11,10 +11,12 @@ Based on construction of common websites. Desktop first.
 - Responsive JS
 - Smartresize (A debouncing function from John Hann http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/)
 - DD_SetCookie function
+- Template functions
 
 **CSS Features:**
 - Normalization
 - Responsive
+- Template css
 
 **CSS fonts :**
 - OpenSans as Regular, Italic, Bold and Blod Italic (Definition adapted from qrohlf.com/posts/better-opensans)
