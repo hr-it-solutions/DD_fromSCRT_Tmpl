@@ -63,4 +63,71 @@ html {
 }
 body {
     margin: 0;
+    background-color: #eee;
+    max-width: 1600px;
+    min-width: 320px;
+}
+
+input, textarea {
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 0;
+}
+
+/* layout */
+.container {
+    width: 1024px; /* todo: width: set container width */;
+    margin: 0 auto;
+}
+
+main,
+section,
+article,
+aside,
+footer,
+header,
+nav {
+    display: block;
+}
+
+/* Module Specific */
+
+
+/* Component Specific */
+.item-page {
+    /* todo: ... */
+}
+
+/* Helpers */
+a {
+
+}
+a:active,
+a:hover,
+a:visited {
+
+}
+
+.width-25 {
+    width: 25%;
+}
+.width-33 {
+    width: 33.333332%;
+}
+.width-50 {
+    width: 50%;
+}
+.width-75 {
+    width: 75%;
+}
+
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
 }
