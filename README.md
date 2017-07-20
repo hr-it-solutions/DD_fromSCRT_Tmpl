@@ -34,10 +34,10 @@ fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
     .container
      width: 1600px
 
-**CrossBrowser- / Device Support**
+**CrossBrowser / Device Support**
 
-| Browsers       | Devices        |
-| -------------- |:---------------|
+| Browser        | Device |
+|:-------------- |:---------------|
 | Chrome  3.5+   | Android 2.2+   |
 | Safari  3+     | iOS     4.3+   |
 | Firefox 3.5+   |
