@@ -1,10 +1,8 @@
 # DD_fromSCRT_Tmpl
-From scratch templates
-
-[![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)
-
 JS and CSS templates for building websites from scratch like DD style ;) <br>
 Based on construction of common websites. Desktop first. ++ Joomla compatible
+
+[![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)
 
 **JS Features**
 - Cross Borwser functions
