@@ -41,7 +41,7 @@ fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 | Opera   10.1+  |
 | IE      9+     |
 
-**++ Joomla Compatible** <br>
+**++ Joomla Compatible Structure** <br>
 Just place the folder to the template directory and connect your template.
 
 # DD_ Namespace
