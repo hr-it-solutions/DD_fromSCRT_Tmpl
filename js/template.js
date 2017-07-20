@@ -20,10 +20,36 @@
                 container:'maincontainer'
             }
         }
+    },
+
+    browser = {
+
+        // isIE
+        isIe: function () {
+            return navigator.appVersion.indexOf("MSIE") != -1;
+        },
+
+        navigator: navigator.appVersion,
+        getVersion: function() {
+            var version = 999; // we assume a sane browser
+            if (navigator.appVersion.indexOf("MSIE") != -1)
+            // bah, IE again, lets downgrade version number
+                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+            return version;
+        }
+        // browser. Adapted from Sam Jones
+        // https://stackoverflow.com/questions/19562207/jquery-detect-browser-ie9-and-below-and-throw-up-a-modal-to-upgrade#answer-19562445
     };
 
     function init(){
 
+        // Examples
+        if (browser.isIe() && browser.getVersion() <= 9) {
+            // IE Version below 9
+        }
+        if (browser.isSafari()) {
+            // Safari
+        }
 
     }
 
