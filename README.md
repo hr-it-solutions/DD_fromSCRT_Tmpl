@@ -15,7 +15,7 @@ Desktop first
 - Responsive
 
 **CSS fonts :**
-- OpenSans as Regular, Italic and Blod (Definition adapted from qrohlf.com/posts/better-opensans)
+- OpenSans as Regular, Italic, Bold and Blod Italic (Definition adapted from qrohlf.com/posts/better-opensans)
 fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 
 **Browser Support:        Device Support:**
