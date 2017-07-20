@@ -6,13 +6,24 @@ Based on construction of common websites.
 
 Desktop first
 
-CSS Features:
+**JS Features:**
+- Cross Borwser functions
+- Responsive JS
+
+**CSS Features:**
 - Normalization
 - Responsive
 
-JS Features:
-- Cross Borwser functions
-- Responsive JS
+**CSS fonts :**
+- OpenSans as Regular, Italic and Blod (Definition adapted from qrohlf.com/posts/better-opensans)
+fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
+
+**Browser Support:        Device Support:**
+Chrome  3.5+            Android 2.2+
+Safari  3+              iOS     4.3+
+Firefox 3.5+
+Opera   10.1+
+IE      9+
 
 # DD_ Namespace
 DD_ stands for  **D**idl**d**u e.K. | HR IT-Solutions (Brand recognition)                   <br>
