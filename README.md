@@ -32,6 +32,8 @@ fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
     .container
      width: 1600px
 
+**++ Joomla Compatible Structure** <br>
+Just place the folder to the template directory and connect your template.
 
 | CrossBrowser   | Device Support |
 |:-------------- |:---------------|
@@ -40,9 +42,6 @@ fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 | Firefox 3.5+   |
 | Opera   10.1+  |
 | IE      9+     |
-
-**++ Joomla Compatible Structure** <br>
-Just place the folder to the template directory and connect your template.
 
 # DD_ Namespace
 DD_ stands for  **D**idl**d**u e.K. | HR IT-Solutions (Brand recognition)                   <br>
