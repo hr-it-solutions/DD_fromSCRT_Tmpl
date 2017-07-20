@@ -24,6 +24,37 @@
 
     browser = {
 
+        // Firefox 1.0+
+        isFirefox: function () {
+            return typeof InstallTrigger !== 'undefined';
+        },
+
+        // Safari 3.0+ "[object HTMLElementConstructor]"
+        isSafari: function () {
+          return /constructor/i.test(window.HTMLElement) ||
+              (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+        },
+
+        // Chrome 1+
+        isChrome: function () {
+            return !!window.chrome && !!window.chrome.webstore;
+        },
+
+        // Opera 8.0+
+        isOpera: function () {
+            return (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+        },
+
+        // Blink engine detection
+        isBlink: function () {
+            return (isChrome || isOpera) && !!window.CSS;
+        },
+
+        // Edge 20+
+        isEDGE: function() {
+            return !isIE && !!window.StyleMedia;
+        },
+
         // isIE
         isIe: function () {
             return navigator.appVersion.indexOf("MSIE") != -1;
