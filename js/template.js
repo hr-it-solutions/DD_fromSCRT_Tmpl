@@ -78,6 +78,7 @@
     function init(){
 
         // Temaplate functions
+        // todo: template functions
 
         // Examples
         if (browser.isIe() && browser.getVersion() <= 9) {
