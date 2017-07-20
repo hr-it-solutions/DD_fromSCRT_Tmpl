@@ -1,6 +1,6 @@
 # DD_fromSCRT_Tmpl
-JS and CSS templates for building websites from scratch like DD style ;) <br>
-Based on construction of common websites. Desktop first. ++ Joomla compatible
+Minimal JS and CSS templates for building websites from scratch like DD style ;) <br>
+Based on construction of common websites. Desktop first, OpenSans, SmartResize ++ Joomla compatible!
 
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)
 
