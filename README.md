@@ -18,12 +18,27 @@ Desktop first
 - OpenSans as Regular, Italic, Bold and Blod Italic (Definition adapted from qrohlf.com/posts/better-opensans)
 fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 
-**Browser Support:        Device Support:**
-Chrome  3.5+            Android 2.2+
-Safari  3+              iOS     4.3+
-Firefox 3.5+
-Opera   10.1+
-IE      9+
+**Template Dimensions:**
+
+    body
+     max-width: 1600px
+     min-width: 320px
+
+    MediaQuery Rules
+     < 1280px <> 1024px <> 960px <> 768px <> 480px <> 320px >
+
+    .container
+     width: 1600px
+
+
+| Browser Support| Device Support |
+| -------------- |:---------------|
+| Chrome  3.5+   | Android 2.2+   |
+| Safari  3+     | iOS     4.3+   |
+| Firefox 3.5+   |
+| Opera   10.1+  |
+| IE      9+     |
+
 
 # DD_ Namespace
 DD_ stands for  **D**idl**d**u e.K. | HR IT-Solutions (Brand recognition)                   <br>
