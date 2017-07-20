@@ -1,6 +1,19 @@
 # DD_fromSCRT_Tmpl
 From scratch templates
 
+JS and CSS templates for building websites from scratch like DD style ;)
+Based on construction of common websites.
+
+Desktop first
+
+CSS Features:
+- Normalization
+- Responsive
+
+JS Features:
+- Cross Borwser functions
+- Responsive JS
+
 # DD_ Namespace
 DD_ stands for  **D**idl**d**u e.K. | HR IT-Solutions (Brand recognition)                   <br>
 It is a namespace prefix, provided to avoid element name conflicts.
