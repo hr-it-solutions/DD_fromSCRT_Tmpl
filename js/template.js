@@ -20,7 +20,7 @@
                 jsEnabled:'js'
             },
             ids:{
-                container:'maincontainer'
+                maincontainer:'maincontainer'
             }
         }
     },
@@ -77,6 +77,8 @@
 
     function init(){
 
+        // Temaplate functions
+
         // Examples
         if (browser.isIe() && browser.getVersion() <= 9) {
             // todo: IE Version below 9 rules
@@ -89,6 +91,7 @@
 
     function init_responsive() {
 
+        /* DD_fromSCRT_Tmpl CSS Desktop first */
         var setCSS = function () {
 
             // (min-width: 1280px)
@@ -186,6 +189,6 @@ function DD_SetCookie(cname, cvalue, exdays) {
     $(function()
     {
         DD_fromSCRT_Tmpl.init();
-        // DD_fromSCRT_Tmpl.init_responsive();
+        DD_fromSCRT_Tmpl.init_responsive();
     });
 })(jQuery);
