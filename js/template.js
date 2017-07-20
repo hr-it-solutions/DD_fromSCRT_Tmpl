@@ -11,6 +11,9 @@
     // Configuration
     var config = {
         CSS:{
+            setup: {
+                containerwidth: 1600
+            },
             classes:{
                 hover:'hover',
                 active:'current',
@@ -76,16 +79,59 @@
 
         // Examples
         if (browser.isIe() && browser.getVersion() <= 9) {
-            // IE Version below 9
+            // todo: IE Version below 9 rules
         }
         if (browser.isSafari()) {
-            // Safari
+            // todo: Safari rules
         }
 
     }
 
-
     function init_responsive() {
+
+        var setCSS = function () {
+
+            // (min-width: 1280px)
+            if($(window).width() >= 1280) {
+                // todo: css rules
+            }
+
+            // (min-width: 1024px) and (max-width: 1280px)
+            if($(window).width() >=  1024 && $(window).width() <= 1280 ) {
+                // todo: css rules
+            }
+
+            // (min-width: 960px) and (max-width: 960px)
+            if($(window).width() >=  960 && $(window).width() <= 1024 ) {
+                // todo: css rules
+            }
+
+            // (min-width: 768px) and (max-width: 960px)
+            if($(window).width() >=  768 && $(window).width() <= 960 ) {
+                // todo: css rules
+            }
+
+            // (min-width: 480px) and (max-width: 768px)
+            if($(window).width() >=  480 && $(window).width() <= 768 ) {
+                // todo: css rules
+            }
+
+            // (min-width: 320px) and (max-width: 480px)
+            if($(window).width() >=  320 && $(window).width() <=  480) {
+                // todo: css rules
+            }
+
+            // (max-width: 320px)
+            if($(window).width() <=  320) {
+                // todo: css rules
+            }
+
+        };
+
+
+        $(window).resize(function(){
+            setCSS();
+        })
 
     }
 
@@ -98,7 +144,6 @@
     };
 
 };
-
 
 (function($) {
     $(function()
