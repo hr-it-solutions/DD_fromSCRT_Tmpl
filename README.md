@@ -17,7 +17,7 @@ Based on construction of common websites. Desktop first, OpenSans, SmartResize +
 - Template css
 
 **CSS Fonts**
-- OpenSans as Regular, Italic, Bold and Blod Italic (Definition adapted from qrohlf.com/posts/better-opensans)
+- OpenSans as Regular, Italic, Bold and Blod Italic (Definition adapted from [qrohlf.com/posts/better-opensans](http://qrohlf.com/posts/better-opensans))
 fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 
 **Template Dimensions**
