@@ -12,14 +12,14 @@
 
 @mixin font-face($ftype, $fweight, $fstyle) {
 
-    $font: "#{$ffamily_svg}-#{$ftype}-webfont";
+    $font: "#{$fpath}#{$ffamily_svg}-#{$ftype}-webfont";
     font-family: $ffamily;
 
-    src: url('#{$fpath}#{$font}.eot');
-    src: url('#{$fpath}#{$font}.eot?#iefix') format('#{$fformat}'),
-    url('#{$fpath}#{$font}.woff') format('woff'),
-    url('#{$fpath}#{$font}.ttf') format('truetype'),
-    url('#{$fpath}#{$font}.svg##{$ffamily_svg}#{$ftype}') format('svg');
+    src: url('#{$font}.eot');
+    src: url('#{$font}.eot?#iefix') format('#{$fformat}'),
+    url('#{$font}.woff') format('woff'),
+    url('#{$font}.ttf') format('truetype'),
+    url('#{$font}.svg##{$ffamily_svg}#{$ftype}') format('svg');
 
     // Cross browser font-weight support
     @if $fweight == normal {
