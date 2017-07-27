@@ -56,6 +56,18 @@ input, textarea {
   background-color: #fff;
   border-radius: 0; }
 
+button {
+  display: inline-block;
+  border-width: 0;
+  font-weight: normal;
+  font-size: inherit;
+  text-decoration: none; }
+
+a {
+  text-decoration: none; }
+  a:active, a:hover, a:visited {
+    text-decoration: none; }
+
 .container {
   width: 1024px;
   margin: 0 auto; }

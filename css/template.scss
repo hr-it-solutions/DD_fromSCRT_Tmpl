@@ -74,6 +74,21 @@ input, textarea {
     border-radius: 0;
 }
 
+button {
+    display: inline-block;
+    border-width: 0;
+    font-weight: normal;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    &:active, &:hover, &:visited {
+        text-decoration: none;
+    }
+}
+
 // Layout
 .container {
     width: $container_width;
@@ -98,15 +113,6 @@ nav ul li {
 }
 
 /* Helpers */
-a {
-    // todo
-}
-a:active,
-a:hover,
-a:visited {
-    // todo
-}
-
 .width-25 {
     width: 25%;
 }
