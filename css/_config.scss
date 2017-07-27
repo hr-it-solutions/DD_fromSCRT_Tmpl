@@ -1,0 +1,23 @@
+// @package    DD_fromSCRT_Tmpl
+//
+// @author     HR IT-Solutions Florian Häusler <info@hr-it-solutions.com>
+// @copyright  Copyright (C) 2017 - 2017 Didldu e.K. | HR IT-Solutions
+// @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+
+// FontFace
+$fpath: '../fonts/';
+$ffamily: 'Open Sans';
+$ffamily_svg: 'OpenSans';
+$fformat: 'embedded-opentype';
+
+// Container
+$container_width: 1024px;
+
+// Template Globals
+$color: #000;
+$bg_color1: #eee;
+$bg_color2: #fff;
+
+// Media Queries Helper
+$mediaQ_display_none:    none !important;
+$mediaQ_display_inherit: inherit !important;

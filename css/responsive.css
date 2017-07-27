@@ -1,67 +1,75 @@
-@charset "UTF-8";
-/**
- * @package    DD_fromSCRT_Tmpl CSS Desktop first
- *
- * @author     HR IT-Solutions Florian Häusler <info@hr-it-solutions.com>
- * @copyright  Copyright (C) 2017 - 2017 Didldu e.K. | HR IT-Solutions
- * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
- **/
+/*
+Error: Invalid CSS after "$color: ": expected expression (e.g. 1px, bold), was "#00;"
+        on line 17 of _config.scss
+        from line 10 of responsive.scss
 
-/* Large Devices */
-@media only screen and (min-width: 1280px) {
-    .visible-large {display: inherit !important}
-    .hidden-large {display: none !important}
-    .visible-desktop {display: inherit !important}
-    .hidden-desktop {display: none !important}
-}
+12: 
+13: // Container
+14: $container_width: 1024px;
+15: 
+16: // Template Globals
+17: $color: #00;
+18: $bg_color1: #eee;
+19: $bg_color2: #fff;
+20: 
+21: // Media Queries Helper
+22: $mediaQ_display_none:    none !important;
 
-/* Desktop Devices */
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-    .visible-large {display: none !important}
-    .hidden-large {display: inherit !important}
-    .visible-desktop {display: inherit !important}
-    .hidden-desktop {display: none !important}
-}
-
-/* Desktop / Tablet Devices */
-@media only screen and (min-width: 960px) and (max-width: 1024px) {
-    .visible-large {display: none !important}
-    .hidden-large {display: inherit !important}
-    .visible-desktop {display: inherit !important}
-    .hidden-desktop {display: none !important}
-}
-
-/* Desktop / Tablet Devices */
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-    .visible-large {display: none !important}
-    .hidden-large {display: inherit !important}
-    .visible-desktop {display: none !important}
-    .hidden-desktop {display: inherit !important}
-    .visible-tablet {display: inherit !important}
-    .hidden-tablet {display: none !important}
-}
-
-/* Desktop Devices */
-@media only screen and (min-width: 768px) {
-	 .visible-phone {display: none !important}
-}
-
-/* Mobile Devices */
-@media only screen and (max-width: 768px) {
-    .visible-large {display: none !important}
-    .hidden-large {display: inherit !important}
-    .visible-desktop {display: none !important}
-    .hidden-desktop {display: inherit !important}
-    .visible-phone {display: inherit !important}
-    .hidden-phone {display: none !important}
-}
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-}
-
-/* Small Devices */
-@media only screen and (max-width: 320px) {
-    .hidden-small {display: none !important}
-}
+Backtrace:
+_config.scss:17
+responsive.scss:10
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/lexer.rb:231:in `expected!'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/parser.rb:723:in `assert_expr'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/parser.rb:68:in `parse'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1134:in `sass_script'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:642:in `variable'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:321:in `to_tree'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `block in with_import'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `with_import'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.1/bin/scss:13:in `<top (required)>'
+C:/RailsInstaller/Ruby2.3.0/bin/scss:22:in `load'
+C:/RailsInstaller/Ruby2.3.0/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$color: \": expected expression (e.g. 1px, bold), was \"#00;\"\A         on line 17 of _config.scss\A         from line 10 of responsive.scss\A \A 12: \A 13: // Container\A 14: $container_width: 1024px;\A 15: \A 16: // Template Globals\A 17: $color: #00;\A 18: $bg_color1: #eee;\A 19: $bg_color2: #fff;\A 20: \A 21: // Media Queries Helper\A 22: $mediaQ_display_none:    none !important;"; }

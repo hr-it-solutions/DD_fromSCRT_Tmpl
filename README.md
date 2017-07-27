@@ -1,5 +1,5 @@
 # DD_fromSCRT_Tmpl
-Minimal JS and CSS templates for building websites from scratch like DD style ;) <br>
+Minimal JS and Sassy CSS (SCSS) templates for building websites from scratch like DD style ;) <br>
 Based on construction of common websites. Desktop first, OpenSans, SmartResize ++ Joomla compatible!
 
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)
@@ -14,7 +14,7 @@ Based on construction of common websites. Desktop first, OpenSans, SmartResize +
 **CSS Features**
 - Normalization
 - Responsive
-- Template css
+- Template
 
 **CSS Fonts**
 - OpenSans as Regular, Italic, Bold and Blod Italic (Definition adapted from [qrohlf.com/posts/better-opensans](http://qrohlf.com/posts/better-opensans))

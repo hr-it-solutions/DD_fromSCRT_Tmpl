@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/**
+ * @package    DD_fromSCRT_Tmpl
+ *
+ * @author     HR IT-Solutions Florian Häusler <info@hr-it-solutions.com>
+ * @copyright  Copyright (C) 2017 - 2017 Didldu e.K. | HR IT-Solutions
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ *
+ **/
+
+@import "config";
+
+@mixin font-face($ftype, $fweight, $fstyle) {
+
+    $font: "#{$ffamily_svg}-#{$ftype}-webfont";
+    font-family: $ffamily;
+
+    src: url('#{$fpath}#{$font}.eot');
+    src: url('#{$fpath}#{$font}.eot?#iefix') format('#{$fformat}'),
+    url('#{$fpath}#{$font}.woff') format('woff'),
+    url('#{$fpath}#{$font}.ttf') format('truetype'),
+    url('#{$fpath}#{$font}.svg##{$ffamily_svg}#{$ftype}') format('svg');
+
+    // Cross browser font-weight support
+    @if $fweight == normal {
+        font-weight: $fweight;
+        font-weight: 400;
+    } @else if $fweight == bold {
+        font-weight: $fweight;
+        font-weight: 700;
+    }
+
+    font-style: $fstyle;
+}
+
+//  Regular
+@font-face {
+    @include font-face('Regular','normal','normal');
+}
+// Italic
+@font-face {
+    @include font-face('Italic','normal','italic');
+}
+// Bold
+@font-face {
+    @include font-face('Bold','bold','normal');
+}
+// BoldItalic
+@font-face {
+    @include font-face('BoldItalic','bold','italic');
+}
+/** @font-face definition adapted from qrohlf.com/posts/better-opensans
+
+** Template */
+
+// Globals
+body, h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea {
+    font-family: $ffamily, sans-serif; color: $color;
+}
+
+html {
+    line-height: 18px;
+}
+body {
+    margin: 0;
+    background-color: $bg_color1;
+    max-width: 1600px;
+    min-width: 320px;
+}
+
+input, textarea {
+    border: 1px solid $bg_color1;
+    background-color: $bg_color2;
+    border-radius: 0;
+}
+
+// Layout
+.container {
+    width: $container_width;
+    margin: 0 auto;
+}
+
+main, section, article, aside, footer, header, nav {
+    display: block;
+}
+
+/* Module Specific */
+/* todo */
+nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+/* Component Specific */
+/* todo */
+.item-page {
+    margin: 0;
+}
+
+/* Helpers */
+a {
+    // todo
+}
+a:active,
+a:hover,
+a:visited {
+    // todo
+}
+
+.width-25 {
+    width: 25%;
+}
+.width-33 {
+    width: 33.333332%;
+}
+.width-50 {
+    width: 50%;
+}
+.width-75 {
+    width: 75%;
+}
+
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
