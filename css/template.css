@@ -1,133 +1,111 @@
+@charset "UTF-8";
 /**
  * @package    DD_fromSCRT_Tmpl
  *
  * @author     HR IT-Solutions Florian Häusler <info@hr-it-solutions.com>
  * @copyright  Copyright (C) 2017 - 2017 Didldu e.K. | HR IT-Solutions
  * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ *
  **/
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
+  font-weight: "normal";
+  font-weight: 400;
+  font-style: "normal"; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Italic-webfont.eot");
+  src: url("../fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic-webfont.woff") format("woff"), url("../fonts/OpenSans-Italic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Italic-webfont.svg#OpenSansItalic") format("svg");
+  font-weight: "normal";
+  font-weight: 400;
+  font-style: "italic"; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold-webfont.eot");
+  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
+  font-weight: "bold";
+  font-weight: 700;
+  font-style: "normal"; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-BoldItalic-webfont.eot");
+  src: url("../fonts/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-BoldItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic") format("svg");
+  font-weight: "bold";
+  font-weight: 700;
+  font-style: "italic"; }
+/** @font-face definition adapted from qrohlf.com/posts/better-opensans
 
-/** Font Definition adapted from qrohlf.com/posts/better-opensans **/
-@font-face { /* Regular */
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-    url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-    url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
-    font-weight: normal;    /* Cross browser support */
-    font-weight: 400;       /* Cross browser support */
-    font-style: normal;
-}
-@font-face { /* Italic */
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-Italic-webfont.eot');
-    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
-    url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
-    url('../fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
-    font-weight: normal;
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face { /* Bold */
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-Bold-webfont.eot');
-    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
-    url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
-    url('../fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
-    font-weight: bold;
-    font-weight: 700;
-    font-style: normal;
-    
-}
-@font-face { /* Bold Italic */
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-BoldItalic-webfont.eot');
-    src: url('../fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
-    url('../fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
-    url('../fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
-    font-weight: bold;
-    font-weight: 700;
-    font-style: italic;
-}
-
-/* Globals */
+** Template */
 body, h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea {
-    font-family: 'Open Sans', sans-serif; color: #000;
-}
+  font-family: "Open Sans", sans-serif;
+  color: #000; }
 
 html {
-    line-height: 18px;
-}
+  line-height: 18px; }
+
 body {
-    margin: 0;
-    background-color: #eee;
-    max-width: 1600px;
-    min-width: 320px;
-}
+  margin: 0;
+  background-color: #eee;
+  max-width: 1600px;
+  min-width: 320px; }
 
 input, textarea {
-    border: 1px solid #eee;
-    background-color: #fff;
-    border-radius: 0;
-}
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-radius: 0; }
 
-/* layout */
+button {
+  display: inline-block;
+  border-width: 0;
+  font-weight: normal;
+  font-size: inherit;
+  text-decoration: none; }
+
+a {
+  text-decoration: none; }
+  a:active, a:hover, a:visited {
+    text-decoration: none; }
+
 .container {
-    width: 1024px; /* todo: width: set container width */;
-    margin: 0 auto;
-}
+  width: 1024px;
+  margin: 0 auto; }
 
-main,
-section,
-article,
-aside,
-footer,
-header,
-nav {
-    display: block;
-}
+main, section, article, aside, footer, header, nav {
+  display: block; }
 
 /* Module Specific */
-
+/* todo */
+nav ul li {
+  list-style: none;
+  display: inline; }
 
 /* Component Specific */
+/* todo */
 .item-page {
-    /* todo: ... */
-}
+  margin: 0; }
 
 /* Helpers */
-a {
-
-}
-a:active,
-a:hover,
-a:visited {
-
-}
-
 .width-25 {
-    width: 25%;
-}
+  width: 25%; }
+
 .width-33 {
-    width: 33.333332%;
-}
+  width: 33.333332%; }
+
 .width-50 {
-    width: 50%;
-}
+  width: 50%; }
+
 .width-75 {
-    width: 75%;
-}
+  width: 75%; }
 
 .f-left {
-    float: left;
-}
+  float: left; }
+
 .f-right {
-    float: right;
-}
+  float: right; }
 
 .clear {
-    clear: both;
-}
+  clear: both; }
+
+/*# sourceMappingURL=template.css.map */

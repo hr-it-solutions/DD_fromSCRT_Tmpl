@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/**
+ * @package    DD_fromSCRT_Tmpl CSS Desktop first
+ *
+ * @author     HR IT-Solutions Florian Häusler <info@hr-it-solutions.com>
+ * @copyright  Copyright (C) 2017 - 2017 Didldu e.K. | HR IT-Solutions
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ **/
+
+@import "config";
+
+$mQdi: $mediaQ_display_none;
+$mQdn: $mediaQ_display_inherit;
+
+// Large Devices
+@media only screen and (min-width: 1280px) {
+    .visible-large {display: $mQdi}
+    .hidden-large {display: $mQdn}
+    .visible-desktop {display: $mQdi}
+    .hidden-desktop {display: $mQdn}
+}
+
+// Desktop Devices
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .visible-large {display: $mQdn}
+    .hidden-large {display: $mQdi}
+    .visible-desktop {display: $mQdi}
+    .hidden-desktop {display: $mQdn}
+}
+
+// Desktop / Tablet Devices
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+    .visible-large {display: $mQdn}
+    .hidden-large {display: $mQdi}
+    .visible-desktop {display: $mQdi}
+    .hidden-desktop {display: $mQdn}
+}
+
+// Desktop / Tablet Devices
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .visible-large {display: $mQdn}
+    .hidden-large {display: $mQdi}
+    .visible-desktop {display: $mQdn}
+    .hidden-desktop {display: $mQdi}
+    .visible-tablet {display: $mQdi}
+    .hidden-tablet {display: $mQdn}
+}
+
+// Desktop Devices
+@media only screen and (min-width: 768px) {
+	 .visible-phone {display: $mQdn}
+}
+
+// Mobile Devices
+@media only screen and (max-width: 768px) {
+    .visible-large {display: $mQdn}
+    .hidden-large {display: $mQdi}
+    .visible-desktop {display: $mQdn}
+    .hidden-desktop {display: $mQdi}
+    .visible-phone {display: $mQdi}
+    .hidden-phone {display: $mQdn}
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+// Small Devices
+@media only screen and (max-width: 320px) {
+    .hidden-small {display: $mQdn}
+}

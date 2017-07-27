@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * @package    DD_fromSCRT_Tmpl CSS Desktop first
  *
@@ -5,62 +6,83 @@
  * @copyright  Copyright (C) 2017 - 2017 Didldu e.K. | HR IT-Solutions
  * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
  **/
-
-/* Large Devices */
 @media only screen and (min-width: 1280px) {
-    .visible-large {display: inherit !important}
-    .hidden-large {display: none !important}
-    .visible-desktop {display: inherit !important}
-    .hidden-desktop {display: none !important}
-}
+  .visible-large {
+    display: none !important; }
 
-/* Desktop Devices */
+  .hidden-large {
+    display: inherit !important; }
+
+  .visible-desktop {
+    display: none !important; }
+
+  .hidden-desktop {
+    display: inherit !important; } }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-    .visible-large {display: none !important}
-    .hidden-large {display: inherit !important}
-    .visible-desktop {display: inherit !important}
-    .hidden-desktop {display: none !important}
-}
+  .visible-large {
+    display: inherit !important; }
 
-/* Desktop / Tablet Devices */
+  .hidden-large {
+    display: none !important; }
+
+  .visible-desktop {
+    display: none !important; }
+
+  .hidden-desktop {
+    display: inherit !important; } }
 @media only screen and (min-width: 960px) and (max-width: 1024px) {
-    .visible-large {display: none !important}
-    .hidden-large {display: inherit !important}
-    .visible-desktop {display: inherit !important}
-    .hidden-desktop {display: none !important}
-}
+  .visible-large {
+    display: inherit !important; }
 
-/* Desktop / Tablet Devices */
+  .hidden-large {
+    display: none !important; }
+
+  .visible-desktop {
+    display: none !important; }
+
+  .hidden-desktop {
+    display: inherit !important; } }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-    .visible-large {display: none !important}
-    .hidden-large {display: inherit !important}
-    .visible-desktop {display: none !important}
-    .hidden-desktop {display: inherit !important}
-    .visible-tablet {display: inherit !important}
-    .hidden-tablet {display: none !important}
-}
+  .visible-large {
+    display: inherit !important; }
 
-/* Desktop Devices */
+  .hidden-large {
+    display: none !important; }
+
+  .visible-desktop {
+    display: inherit !important; }
+
+  .hidden-desktop {
+    display: none !important; }
+
+  .visible-tablet {
+    display: none !important; }
+
+  .hidden-tablet {
+    display: inherit !important; } }
 @media only screen and (min-width: 768px) {
-	 .visible-phone {display: none !important}
-}
-
-/* Mobile Devices */
+  .visible-phone {
+    display: inherit !important; } }
 @media only screen and (max-width: 768px) {
-    .visible-large {display: none !important}
-    .hidden-large {display: inherit !important}
-    .visible-desktop {display: none !important}
-    .hidden-desktop {display: inherit !important}
-    .visible-phone {display: inherit !important}
-    .hidden-phone {display: none !important}
-}
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-}
+  .visible-large {
+    display: inherit !important; }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-}
+  .hidden-large {
+    display: none !important; }
 
-/* Small Devices */
+  .visible-desktop {
+    display: inherit !important; }
+
+  .hidden-desktop {
+    display: none !important; }
+
+  .visible-phone {
+    display: none !important; }
+
+  .hidden-phone {
+    display: inherit !important; } }
 @media only screen and (max-width: 320px) {
-    .hidden-small {display: none !important}
-}
+  .hidden-small {
+    display: inherit !important; } }
+
+/*# sourceMappingURL=responsive.css.map */

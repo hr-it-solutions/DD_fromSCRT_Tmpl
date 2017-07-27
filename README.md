@@ -1,5 +1,5 @@
 # DD_fromSCRT_Tmpl
-Minimal JS and CSS templates for building websites from scratch like DD style ;) <br>
+Minimal JS and sassy CSS (SCSS) templates for building websites from scratch like DD style ;) <br>
 Based on construction of common websites. Desktop first, OpenSans, SmartResize ++ Joomla compatible!
 
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)
@@ -14,10 +14,14 @@ Based on construction of common websites. Desktop first, OpenSans, SmartResize +
 **CSS Features**
 - Normalization
 - Responsive
-- Template css
+- Template
 
-**CSS Fonts**
-- OpenSans as Regular, Italic, Bold and Blod Italic (Definition adapted from qrohlf.com/posts/better-opensans)
+**SCSS**
+- config file
+- font-face mixin
+
+**Font Implementation**
+- OpenSans as Regular, Italic, Bold and Blod Italic (Definition adapted from [qrohlf.com/posts/better-opensans](http://qrohlf.com/posts/better-opensans))
 fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 
 **Template Dimensions**
@@ -32,6 +36,8 @@ fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
     .container
      width: 1600px
 
+**++ Joomla Compatible Structure** <br>
+Just place the folder to the template directory and connect your template.
 
 | CrossBrowser   | Device Support |
 |:-------------- |:---------------|
@@ -40,9 +46,6 @@ fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 | Firefox 3.5+   |
 | Opera   10.1+  |
 | IE      9+     |
-
-**++ Joomla Compatible** <br>
-Just place the folder to the template directory and connect your template.
 
 # DD_ Namespace
 DD_ stands for  **D**idl**d**u e.K. | HR IT-Solutions (Brand recognition)                   <br>
