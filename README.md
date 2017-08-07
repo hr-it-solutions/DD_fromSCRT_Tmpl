@@ -39,13 +39,7 @@ fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 **++ Joomla Compatible Structure** <br>
 Just place the folder to the template directory and connect your template.
 
-| CrossBrowser   | Device Support |
-|:-------------- |:---------------|
-| Chrome  3.5+   | Android 2.2+   |
-| Safari  3+     | iOS     4.3+   |
-| Firefox 3.5+   |
-| Opera   10.1+  |
-| IE      9+     |
+Support all major web browsers.
 
 # DD_ Namespace
 DD_ stands for  **D**idl**d**u e.K. | HR IT-Solutions (Brand recognition)                   <br>
