@@ -5,7 +5,7 @@ Based on construction of common websites. Desktop first, OpenSans, SmartResize +
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)
 
 **JS Features**
-- Cross Borwser functions
+- Cross Browser functions
 - Responsive JS
 - Smartresize (A debouncing function from John Hann http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/)
 - DD_SetCookie function
