@@ -5,7 +5,7 @@ Based on construction of common websites. Desktop first, OpenSans, SmartResize +
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=102)](https://opensource.org/licenses/GPL-2.0/)
 
 **JS Features**
-- Cross Borwser functions
+- Cross Browser functions
 - Responsive JS
 - Smartresize (A debouncing function from John Hann http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/)
 - DD_SetCookie function
@@ -39,13 +39,7 @@ fonts/ Apache License Version 2.0, January 2004 http://www.apache.org/licenses/)
 **++ Joomla Compatible Structure** <br>
 Just place the folder to the template directory and connect your template.
 
-| CrossBrowser   | Device Support |
-|:-------------- |:---------------|
-| Chrome  3.5+   | Android 2.2+   |
-| Safari  3+     | iOS     4.3+   |
-| Firefox 3.5+   |
-| Opera   10.1+  |
-| IE      9+     |
+Support all major web browsers.
 
 # DD_ Namespace
 DD_ stands for  **D**idl**d**u e.K. | HR IT-Solutions (Brand recognition)                   <br>
