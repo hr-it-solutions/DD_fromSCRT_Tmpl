@@ -6,7 +6,7 @@
  * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
  **/
 
-; var DD_fromSCRT_Tmpl = function () {
+; var DD_fromSCRT_Tmpl = (function($, document, undefined) {
 
     // Configuration
     var config = {
@@ -73,9 +73,9 @@
         }
         // browser. Adapted from Sam Jones
         // https://stackoverflow.com/questions/19562207/jquery-detect-browser-ie9-and-below-and-throw-up-a-modal-to-upgrade#answer-19562445
-    };
+    },
 
-    function init(){
+    init = function() {
 
         // Temaplate functions
         // todo: template functions
@@ -88,9 +88,9 @@
             // todo: Safari rules
         }
 
-    }
+    },
 
-    function init_responsive() {
+    init_responsive = function() {
 
         /* DD_fromSCRT_Tmpl CSS Desktop first */
         var setCSS = function () {
@@ -137,7 +137,36 @@
             setCSS();
         })
 
-    }
+    };
+
+    (function($,sr){
+        // http://paulirish.com/2009/throttled-smartresize-jquery-event-handler/
+        // debouncing function from John Hann
+        // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+        var debounce = function(func, threshold, execAsap) {
+            var timeout;
+
+            return function debounced () {
+                var obj = this, args = arguments;
+                function delayed () {
+                    if (!execAsap)
+                        func.apply(obj, args);
+                    timeout = null;
+                }
+
+                if (timeout)
+                    clearTimeout(timeout);
+                else if (execAsap)
+                    func.apply(obj, args);
+
+                timeout = setTimeout(delayed, threshold || 50);
+            };
+        };
+
+        // smartresize
+        jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+    })(jQuery,'smartresize');
 
     // more methods
 
@@ -147,7 +176,7 @@
         init_responsive: init_responsive
     };
 
-};
+}(jQuery, document, undefined));
 
 /* Set cookie (global) */
 function DD_SetCookie(cname, cvalue, exdays) {
@@ -156,35 +185,6 @@ function DD_SetCookie(cname, cvalue, exdays) {
     var expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
-(function($,sr){
-    // http://paulirish.com/2009/throttled-smartresize-jquery-event-handler/
-    // debouncing function from John Hann
-    // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-    var debounce = function(func, threshold, execAsap) {
-        var timeout;
-
-        return function debounced () {
-            var obj = this, args = arguments;
-            function delayed () {
-                if (!execAsap)
-                    func.apply(obj, args);
-                timeout = null;
-            }
-
-            if (timeout)
-                clearTimeout(timeout);
-            else if (execAsap)
-                func.apply(obj, args);
-
-            timeout = setTimeout(delayed, threshold || 50);
-        };
-    };
-
-    // smartresize
-    jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
-
-})(jQuery,'smartresize');
 
 (function($) {
     $(function()
