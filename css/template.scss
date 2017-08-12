@@ -35,15 +35,15 @@
 
 //  Regular
 @font-face {
-    @include font-face('Regular','normal','normal');
+    @include font-face('Regular', normal, normal);
 }
 // Italic
 @font-face {
-    @include font-face('Italic','normal','italic');
+    @include font-face('Italic', normal, italic);
 }
 // Bold
 @font-face {
-    @include font-face('Bold','bold','normal');
+    @include font-face('Bold', bold, normal);
 }
 // BoldItalic
 @font-face {
