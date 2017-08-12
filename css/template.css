@@ -68,6 +68,16 @@ a {
   a:active, a:hover, a:visited {
     text-decoration: none; }
 
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  quotes: none; }
+
 .container {
   width: 1024px;
   margin: 0 auto; }
