@@ -47,7 +47,7 @@
 }
 // BoldItalic
 @font-face {
-    @include font-face('BoldItalic','bold','italic');
+    @include font-face('BoldItalic',bold, italic);
 }
 /** @font-face definition adapted from qrohlf.com/posts/better-opensans
 
