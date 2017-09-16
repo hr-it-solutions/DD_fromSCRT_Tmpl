@@ -32,9 +32,9 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-BoldItalic-webfont.eot");
   src: url("../fonts/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-BoldItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic") format("svg");
-  font-weight: "bold";
+  font-weight: bold;
   font-weight: 700;
-  font-style: "italic"; }
+  font-style: italic; }
 /** @font-face definition adapted from qrohlf.com/posts/better-opensans
 
 ** Template */
